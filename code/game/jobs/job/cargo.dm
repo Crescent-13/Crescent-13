@@ -14,7 +14,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	idtype = /obj/item/card/id/cargo/head
-	supervisors = "the Law"
+	supervisors = "the Head of Personnel"
 	selection_color = "#9b633e"
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
@@ -23,33 +23,43 @@
 	ideal_character_age = 40
 
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
-	job_description = "As the representative of Guild, your purpose is to handle all matters related to import/export of goods."
+	job_description = "The Quartermaster manages the Supply department, checking cargo orders and ensuring supplies get to where they are needed."
+	alt_titles = list("Supply Chief" = /datum/alt_title/supply_chief)
+
+// Quartermaster Alt Titles
+/datum/alt_title/supply_chief
+	title = "Supply Chief"
 
 //////////////////////////////////
 //			Cargo Tech
 //////////////////////////////////
-/datum/job/merchant
-	title = "Merchant"
-	flag = MERCHANT
+/datum/job/cargo_tech
+	title = "Cargo Technician"
+	flag = CARGOTECH
 	departments = list(DEPARTMENT_CARGO)
 	department_flag = CIVILIAN
 	pto_type = PTO_CARGO
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Quartermaster and the Law"
+	supervisors = "the Quartermaster and the Head of Personnel"
 	selection_color = "#7a4f33"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
-	job_description = "As a merchant, you thrive to grasp the interest of future buyers, seek out the best trades by roaming the town and making sure has everything they need."
+	job_description = "A Cargo Technician fills and delivers cargo orders. They are encouraged to return delivered crates to the Cargo Shuttle, \
+						because Central Command gives a partial refund."
+	alt_titles = list("Logistics Specialist" = /datum/alt_title/logi_spec)
+
+// Cargo Technician Alt Titles
+/datum/alt_title/logi_spec
+	title = "Logistics Specialist"
 
 //////////////////////////////////
 //			Shaft Miner
 //////////////////////////////////
 
-/*
 /datum/job/mining
 	title = "Shaft Miner"
 	flag = MINER
@@ -79,4 +89,3 @@
 
 /datum/alt_title/miner/belt
 	title = "Belt Miner"
-*/

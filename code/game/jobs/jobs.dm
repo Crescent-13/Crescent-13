@@ -1,40 +1,55 @@
 
 var/const/ENGSEC			=(1<<0)
 
-var/const/LORD				=(1<<0)
-var/const/RGUARD			=(1<<1)
-var/const/KNIGHT			=(1<<2)
-var/const/MASTER			=(1<<3)
-var/const/MILITIA			=(1<<4)
-var/const/INTERN			=(1<<5)
-//var/const/CHIEF				=(1<<5)
-//var/const/ENGINEER			=(1<<6)
-//var/const/ATMOSTECH			=(1<<7)
+var/const/CAPTAIN			=(1<<0)
+var/const/HOS				=(1<<1)
+var/const/WARDEN			=(1<<2)
+var/const/DETECTIVE			=(1<<3)
+var/const/OFFICER			=(1<<4)
+var/const/CHIEF				=(1<<5)
+var/const/ENGINEER			=(1<<6)
+var/const/ATMOSTECH			=(1<<7)
+var/const/AI				=(1<<8)
+var/const/CYBORG			=(1<<9)
+var/const/CLOWN				=(1<<13) //VOREStation Add
+var/const/MIME				=(1<<14) //VOREStation Add
+var/const/INTERN			=(1<<15) //VOREStation Add
 
 var/const/MEDSCI			=(1<<1)
 
-var/const/MAGUS				=(1<<0)
-var/const/SCRIBE			=(1<<1)
-var/const/PDOCTOR			=(1<<2)
-var/const/HEALER			=(1<<3)
-var/const/CHIRURGEON		=(1<<4)
-var/const/ESCRIBE			=(1<<5)
-var/const/ALCHEMIST 		=(1<<6)
+var/const/RD				=(1<<0)
+var/const/SCIENTIST			=(1<<1)
+var/const/CHEMIST			=(1<<2)
+var/const/CMO				=(1<<3)
+var/const/DOCTOR			=(1<<4)
+var/const/GENETICIST		=(1<<5)
+var/const/VIROLOGIST		=(1<<6)
+var/const/PSYCHIATRIST		=(1<<7)
+var/const/ROBOTICIST		=(1<<8)
+var/const/XENOBIOLOGIST		=(1<<9)
+var/const/PARAMEDIC			=(1<<10)
+var/const/PATHFINDER 		=(1<<11) //VOREStation Add
+var/const/EXPLORER 			=(1<<12) //VOREStation Add
+var/const/SAR 				=(1<<13) //VOREStation Add
+var/const/XENOBOTANIST		=(1<<14) //VOREStation Add
 
 var/const/CIVILIAN			=(1<<2)
 
-var/const/TREASURER			=(1<<0)
-var/const/INNKEEPER			=(1<<1)
-var/const/FARMER			=(1<<2)
+var/const/HOP				=(1<<0)
+var/const/BARTENDER			=(1<<1)
+var/const/BOTANIST			=(1<<2)
 var/const/CHEF				=(1<<3)
-var/const/FISHER			=(1<<4)
-var/const/HUNTER			=(1<<5)
+var/const/JANITOR			=(1<<4)
+var/const/LIBRARIAN			=(1<<5)
 var/const/QUARTERMASTER		=(1<<6)
-var/const/MERCHANT			=(1<<7)
-var/const/BARD				=(1<<8)
-var/const/CHAPLAIN			=(1<<9)
-var/const/SERVANT			=(1<<10)
-var/const/PEASANT			=(1<<11)
+var/const/CARGOTECH			=(1<<7)
+var/const/MINER				=(1<<8)
+var/const/LAWYER			=(1<<9)
+var/const/CHAPLAIN			=(1<<10)
+var/const/ASSISTANT			=(1<<11)
+var/const/BRIDGE			=(1<<12)
+var/const/PILOT 			=(1<<13) //VOREStation Add
+var/const/ENTERTAINER		=(1<<14) //VOREStation Add
 
 //VOREStation Add
 var/const/TALON				=(1<<3)

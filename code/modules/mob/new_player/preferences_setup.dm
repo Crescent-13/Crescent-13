@@ -201,8 +201,8 @@
 
 	var/datum/job/previewJob
 	// Determine what job is marked as 'High' priority, and dress them up as such.
-	if(job_civilian_low & PEASANT)
-		previewJob = SSjob.get_job(PEASANT)
+	if(job_civilian_low & ASSISTANT)
+		previewJob = SSjob.get_job(USELESS_JOB)
 	else
 		for(var/datum/job/job in SSjob.occupations)
 			var/job_flag
@@ -217,7 +217,7 @@
 				previewJob = job
 				break
 
-	if((equip_preview_mob & EQUIP_PREVIEW_LOADOUT) && !(previewJob && (equip_preview_mob & EQUIP_PREVIEW_JOB)))
+	if((equip_preview_mob & EQUIP_PREVIEW_LOADOUT) && !(previewJob && (equip_preview_mob & EQUIP_PREVIEW_JOB) && (previewJob.type == /datum/job/ai || previewJob.type == /datum/job/cyborg)))
 		var/list/equipped_slots = list()
 		for(var/thing in gear)
 			var/datum/gear/G = gear_datums[thing]

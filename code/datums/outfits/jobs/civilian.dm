@@ -168,7 +168,7 @@
 	id_slot = slot_wear_id
 	pda_slot = slot_l_store
 	pda_type = /obj/item/pda/explorer //VORESTation Edit - Better Brown
-	id_type = null	//obj/item/card/id/explorer/explorer
+	id_type = /obj/item/card/id/explorer/explorer //VOREStation Edit
 	id_pda_assignment = "Explorer"
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_COMPREHENSIVE_SURVIVAL
 	backpack_contents = list(/obj/item/clothing/accessory/permit/gun/planetside = 1)
@@ -201,7 +201,7 @@
 	id_slot = slot_wear_id
 	pda_slot = slot_belt
 	pda_type = /obj/item/pda //VOREStation Edit - Civilian
-	id_type = null 	//obj/item/card/id/explorer/pilot //VOREStation Edit
+	id_type = /obj/item/card/id/explorer/pilot //VOREStation Edit
 	id_pda_assignment = "Pilot"
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_COMPREHENSIVE_SURVIVAL
 
